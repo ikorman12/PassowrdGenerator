@@ -22,7 +22,7 @@ function generatePassword (){
     criteria();
     //for loop to use the global varable above to generate a random pw
     for(var i=0; i<length; i++){
-      var charInd = MAth.floor(Math.random() * possibleChar.length);
+      var charInd = Math.floor(Math.random() * possibleChar.length);
       password += possibleChar[charInd];
     }
     return password;
@@ -36,11 +36,12 @@ function checkLength(length){
 
 //prompts user to chose preferred length of password and validates it
 function getLength () {
-  var length = parseInit(prompt(`Enter desired Length (minimum of 8 characters and maximum of 128):`))
+  var length = prompt(`Enter desired Length (minimum of 8 characters and maximum of 128):`)
   if(checkLength(length)){
     return length
-  } else (err) => console.log(`Error ${length} is not a valid input please enter again`);
-  getLength();
+  } else {
+  prompt(`Error ${length} is not a valid input please enter again`);
+  getLength();}
 };
 
 function criteria(){

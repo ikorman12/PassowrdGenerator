@@ -27,6 +27,10 @@ If the user ever deems tha that would like a unique key or password for up to 12
 -[Live-deployment](https://ikorman12.github.io/PasswordGen/)
 
 ## Screenshots
+![Prompt](./Assets/images/desiredLength.png)
+![Length-Error](./Assets/images/lengthErr.png)
+![Criteria](./Assets/images/choosingCriteria.png)
+![Success](./Assets/images/success.png)
 
 ## Future
 Reuse this project within future development as a linked asset in order to generate random id's or just simply decide on an new safe password.
